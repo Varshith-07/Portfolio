@@ -1,0 +1,50 @@
+body{
+    background-color: 	rgb(24,24,24);
+}
+/* Increase the height of the navbar */
+.navbar {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Center navbar items horizontally and vertically */
+.navbar .nav {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Increase space between nav items */
+.navbar .nav-item {
+  margin: 0 1rem;
+}
+
+/* Optional: Increase font size for better spacing effect */
+.navbar .nav-link {
+  font-size: 1.1rem;
+  padding: 0.75rem 1rem;
+}
+.nav-link{
+    opacity: 0.75;
+}
+.nav-link:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.fa-solid{
+    color: white;
+    margin-right: 6px;
+  }
+  .last-icons{
+    margin-left: 120px;
+  }
+  .fa-github:hover {
+    color: #000000;
+    box-shadow: 0 0 5px #ffffff;
+    text-shadow: 0 0 5px #ffffff;
+  }
+  .fa-linkedin:hover{
+    color: #000000;
+    box-shadow: 0 0 5px #ffffff;
+    text-shadow: 0 0 5px #ffffff;
+  }

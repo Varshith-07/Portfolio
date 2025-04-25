@@ -1,0 +1,98 @@
+<%- layout('/layout/boilerplate.ejs') %>
+<style>
+    .projects-section {
+  padding: 4rem 2rem;
+  background-color: #4f4f4f;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  color: #ffffff;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background: rgb(70, 70, 70);
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.project-card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.project-card .date {
+  font-size: 0.9rem;
+  color: #d4d4d4;
+  margin-bottom: 1rem;
+}
+
+.project-card ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+  list-style-type: disc;
+}
+
+.project-card li {
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+p{
+    color: white;
+}
+</style>
+<body>
+    <main class="projects-section">
+        <h1 class="section-title">Projects</h1>
+        <div class="projects-container">
+          
+          <div class="project-card">
+            <h2>Wanderlust (Full Stack Website)</h2>
+            <p class="date">Jan 2025</p>
+            <p>A dynamic hotel listing web application where users can explore hotels, view detailed pages, and submit reviews. Hotel owners can manage listings with role-based access control.</p>
+            <ul>
+              <li><strong>Features:</strong> User authentication, CRUD listings, reviews</li>
+              <li><strong>Tech Stack:</strong> Node.js, Express, MongoDB, EJS, Passport.js, Cloudinary, Mapbox</li>
+            </ul>
+          </div>
+      
+          <div class="project-card">
+            <h2>Parkinson’s Disease Prediction (ML Project)</h2>
+            <p class="date">Mar 2024</p>
+            <p>Built a machine learning model to predict Parkinson’s disease using clinical dataset. Compared multiple algorithms for performance evaluation.</p>
+            <ul>
+              <li><strong>Algorithms:</strong> Logistic Regression, KNN, SVM, Decision Tree, Random Forest</li>
+              <li><strong>Libraries:</strong> NumPy, Pandas, Scikit-learn</li>
+            </ul>
+          </div>
+      
+          <div class="project-card">
+            <h2>SMART ID Entry System (IoT)</h2>
+            <p class="date">June 2024</p>
+            <p>Developed a secure RFID-based entry system with automated access control using NodeMCU and MFRC522.</p>
+            <ul>
+              <li><strong>Hardware:</strong> NodeMCU, MFRC522 RFID</li>
+              <li><strong>Tools:</strong> Arduino IDE</li>
+            </ul>
+          </div>
+      
+        </div>
+      </main>
+      
+</body>

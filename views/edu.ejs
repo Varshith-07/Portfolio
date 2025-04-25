@@ -1,0 +1,140 @@
+<%- layout('/layout/boilerplate.ejs') %>
+<style>
+.accordion{
+    background-color: rgb(69, 69, 69);
+    color: white;
+    margin: auto;
+    width: 80%;
+    border: 3px solid rgb(0, 0, 0);
+    padding: 10px;
+    margin-top: 4rem;
+    max-width: 1080px;
+}
+.accordion-body {
+    background-color:rgb(72, 72, 72);
+}
+.accordion-button{
+    background-color:rgb(72, 72, 72) !important;
+    color: white;
+    font-size: 1.25rem;
+}
+img{
+    margin-top: 2rem;
+    padding: 1rem;
+}
+.row{
+    background-color: rgb(97, 97, 97);
+    color: white;
+}
+.accordion-button:focus,
+.accordion-button:not(.collapsed) {
+  color: rgb(165, 165, 165); /* or your preferred color */
+  background-color: inherit; /* optional, to keep background neutral */
+  box-shadow: 1px 1px 5px rgb(214, 214, 214); /* removes the default blue shadow */
+}
+
+</style>
+
+
+<body>
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+              B.Tech
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+                <div class="card mb-3" style="max-width: 1080px;">
+                    <div class="row g-0">
+                      <div class="col-md-8">
+                        <div class="card-body">
+                            <ul>
+                                <li><strong>Program:</strong> B.Tech – Artificial Intelligence</li>
+                                <li><strong>Institute:</strong> VJIT Hyderabad</li>
+                                <li><strong>Duration:</strong> 2022 – Present</li>
+                                <li><strong>CGPA:</strong> 9.12</li>
+                                <li>Gained in-depth knowledge in core AI subjects such as Machine Learning, Deep Learning, Natural Language Processing, and Data Science.</li>
+                                <li>Worked on hands-on projects involving full-stack web development and AI model deployment.</li>
+                                <li>Built practical skills in programming (Python, Java, C), databases, and frameworks like Node.js, Express.js, and Scikit-learn.</li>
+                                <li>Collaborated on real-world applications like a travel review platform, a disease prediction system, and an RFID-based entry solution.</li>
+                                <li>Actively participated in hackathons, coding competitions, and earned certifications in Python, DBMS, and Machine Learning.</li>
+                              </ul>
+                            </div>
+                      </div>
+                      <div class="col-md-4">
+                        <a href="https://vjit.ac.in/"><img src="https://image-static.collegedunia.com/public/college_data/images/appImage/24593_VJIT_APP.jpg?h=260&w=360&mode=crop" class="img-fluid rounded-start" alt="..."></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+              HSC
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <div class="card mb-3" style="max-width: 1080px;">
+                    <div class="row g-0">
+                      <div class="col-md-8">
+                        <div class="card-body">
+                            <ul>
+                                <li><strong>Program:</strong> HSC – Physics, Chemistry, Mathematics (PCM)</li>
+                                <li><strong>Institute:</strong> Narayana Junior College</li>
+                                <li><strong>Duration:</strong> 2020 – 2022</li>
+                                <li><strong>CPI:</strong> 9.74</li>
+                                <li>Focused on core science subjects with a strong foundation in analytical and problem-solving skills.</li>
+                                <li>Prepared rigorously for national-level competitive exams like JEE.</li>
+                                <li>Strengthened mathematical concepts foundational to AI and technical learning.</li>
+                                <li>Built time management and discipline through a structured academic environment.</li>
+                              </ul>
+                              
+                            </div>
+                      </div>
+                      <div class="col-md-4">
+                        <a href=" https://www.narayanajuniorcolleges.com/"><img src="https://content.jdmagicbox.com/v2/comp/mumbai/z6/040pxx40.xx40.170928180411.g5z6/catalogue/narayana-iit-academy-maheshwaram-rangareddy-rw78x02neb.jpg" class="img-fluid rounded-start" alt="..."></a>
+                      </div>
+                    </div>
+                  </div>
+               </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+              SSC
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <div class="card mb-3" style="max-width: 1080px;">
+                    <div class="row g-0">
+                      <div class="col-md-8">
+                        <div class="card-body">
+                            <ul>
+                                <li><strong>Program:</strong> SSC – General Curriculum</li>
+                                <li><strong>Institute:</strong> St. Rita High School</li>
+                                <li><strong>Duration:</strong> 2006 – 2020</li>
+                                <li><strong>CGPA:</strong> 10.0</li>
+                                <li>Built a solid foundation in Mathematics, Science, and English.</li>
+                                <li>Developed early interest in technology through school-level exposure and projects.</li>
+                                <li>Achieved academic excellence with a perfect 10.0 CPI.</li>
+                                <li>Actively participated in school activities, building soft skills like communication and teamwork.</li>
+                              </ul>
+                            </div>
+                      </div>
+                      <div class="col-md-4">
+                        <a href=" https://stritahighschool.in/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMRpeM9B4gvqZoaaB9FjqS9ckxz2YWYOrhRQ&s" class="img-fluid rounded-start" alt="..."></a>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</body>

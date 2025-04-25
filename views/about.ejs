@@ -1,0 +1,111 @@
+  <%- layout('/layout/boilerplate.ejs') %>
+  <style>
+  .card{
+      background-color: rgb(69, 69, 69);
+      color: white;
+      margin: auto;
+      width: 90%;
+      border: 3px solid rgb(161, 161, 161);
+      padding: 10px;
+      margin-top: 3rem;
+      max-width: 890px;
+  }
+  img{
+    margin-top: 19%;
+  }
+  .Contactinfobutton{
+    margin: auto;
+    width: 50%;
+    padding-left:15%;
+    margin-bottom: 10px;
+  }
+  .offcanvas{
+    background-color: rgb(60, 60, 60);
+    color: white;
+  }
+  .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+  }
+  .offcanvas{
+    width: 370px !important;
+  }
+  .offcanvas-body ul li{
+    background-color: rgb(58, 58, 58);
+    color: white;
+    margin-top: 20px;
+  }
+    .list-group-item {
+      font-size: large;
+      border: 1px solid rgb(45, 45, 45) !important;       /* Override all borders */
+      border-radius: 0.5rem !important;         /* Optional rounding */
+      margin-bottom: 0.5rem;                    /* Spacing between items */
+      background-color: rgba(255, 255, 255, 0.05); /* Light transparent bg */
+      color: white;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(0px);
+    }
+
+    .list-group-item:hover {
+      box-shadow: 0 4px 35px rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(4px);
+      transform: translateY(-2px);
+    }
+
+    /* Remove Bootstrap's grouped border collapse */
+    .list-group {
+      border: none;
+    }
+    .list-group i{
+      margin-right: 1rem;
+    }
+  </style>
+  <body>
+      <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title">Leave a Message</h5>
+                <p class="card-text">
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="John Wick" name="name1">
+                  </div>
+                <div class="mb-3">
+                  <form action="/about" method="post">
+                  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form></p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <img src="https://plus.unsplash.com/premium_photo-1661319161655-302305db59b6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded-start" alt="...">
+            </div>
+          </div>
+        </div>
+        <div class="Contactinfobutton">
+        <button class="btn btn-primary mt-3 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          Contact Information
+        </button>
+      </div>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Contact Information</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <ul class="list-group">
+                <li class="list-group-item"><i class="fa-solid fa-phone"></i> 9876543210</li>
+                <li class="list-group-item"><i class="fa-solid fa-envelope"></i> varshithnaidu1312@gmail.com</li>
+                <li class="list-group-item"><i class="fa-brands fa-instagram"></i> varshith__7781</li>
+                <li class="list-group-item"><i class="fa-brands fa-facebook"></i> varsh1312</li>
+                <li class="list-group-item"><i class="fa-brands fa-whatsapp"></i> 9030260387</li>
+              </ul>
+          </div>
+        </div>
+  </body>
