@@ -15,10 +15,10 @@ This site acts as a **digital resume** and a central place for everything I've w
 ## 🚀 Tech Stack
 
 - Node.js
-- Express (if used)
+- Express 
 - HTML/CSS
 - JavaScript
-- Other libraries/frameworks (if applicable)
+- ejs, ejs-mate
 
 ---
 
